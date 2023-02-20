@@ -36,7 +36,7 @@
 </nav>
 <style>
      .bg-blue {
-    background-color: #FA8072;
+    background-color: #B4E4FF;
   }
   .bg{
     background-color: #F9F5E7;
