@@ -3,6 +3,6 @@
 @section ('container')
 	<h3><?= $nama;?></h3>
     <p><?= $Nim;?></p>
-	<img src="img/<?= $image;?>" alt="<?= $nama;?>" width="150">
+	<img src="img/<?= $image;?>" alt="<?= $nama;?>" width="150" class="img-thumbnail rounded-circle">
     
 @endsection
