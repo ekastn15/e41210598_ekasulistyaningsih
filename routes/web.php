@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
 
@@ -17,17 +18,10 @@ use App\Models\Post;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/about', function(){
-    return view('about',[
-        "judul" => "About",
-        "nama" => "Eka Sulistyaningsih",
-        "Nim" => "E41210598",
-        "image" => "yoona.jpg"
-    ]);
-});
 Route::get('/dashboard', function(){
     return view('dashboard',[
         "judul" => "Dashboard"
     ]);
-});  
+}); 
+Route::get('/about', [AboutController::class, 'indexAbout']); 
 Route::get('/blog', [PostController::class, 'index']);
