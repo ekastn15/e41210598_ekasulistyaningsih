@@ -2,7 +2,7 @@
 
 @section ('container')
  @foreach ($postingan as $post)
- <article class = "mb-3">
+ <article class = "mt-2 mb-3">
     <h2>{{$post["judul"]}}</h2>
     <h5>{{$post["Penulis"]}}</h5>
     <p>{{$post["body"]}}</p>
