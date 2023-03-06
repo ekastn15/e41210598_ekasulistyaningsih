@@ -23,5 +23,10 @@ Route::get('/dashboard', function(){
         "judul" => "Dashboard"
     ]);
 }); 
+Route::get('/mainPage', function(){
+    return view('mainPage',[
+        "judul" => "Admin"
+    ]);
+}); 
 Route::get('/about', [AboutController::class, 'indexAbout']); 
 Route::get('/blog', [PostController::class, 'index']);

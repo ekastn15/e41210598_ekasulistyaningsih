@@ -45,6 +45,7 @@
         <a class="nav-link {{($judul == 'Dashboard')? 'active' : ''}}" href="/dashboard">Home</a>
         <a class="nav-link {{($judul == 'Blog')? 'active' : ''}}" href="/blog">Blog</a>
         <a class="nav-link {{($judul == 'About')? 'active' : ''}}" href="/about">About</a>
+        <a class="nav-link {{($judul == 'About')? 'active' : ''}}" href="/mainPage">Main Page</a>
       </nav>
     </div>
   </header>
