@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
 
@@ -23,10 +24,8 @@ Route::get('/dashboard', function(){
         "judul" => "Dashboard"
     ]);
 }); 
-Route::get('/mainPage', function(){
-    return view('mainPage',[
-        "judul" => "Admin"
-    ]);
-}); 
+Route::get('/mainPage', [AdminController::class, 'indexAdmin']); 
 Route::get('/about', [AboutController::class, 'indexAbout']); 
 Route::get('/blog', [PostController::class, 'index']);
+
+?>

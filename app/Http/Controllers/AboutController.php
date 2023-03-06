@@ -16,3 +16,4 @@ class AboutController extends Controller
         ]);
     }
 }
+?>
